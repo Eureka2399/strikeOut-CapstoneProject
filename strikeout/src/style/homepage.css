@@ -1,0 +1,54 @@
+.homepage video{
+    width: 100%;
+    object-fit: cover;
+    height: calc(100vh - 128px);
+    position: relative;
+    z-index: -2;
+}
+
+.homepage .cover{
+    content: '';
+    width: 100%;
+    background-color: black;
+    height: calc(100vh - 128px);
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.homepage{
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height: calc(100vh - 128px);
+}
+
+.homepage h1{
+    color: white;
+    font-size: 10vw;
+}
+
+.homepage h1 span{
+    color: red;
+}
+
+.homepage .h1-button{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.homepage .h1-button button{
+    color: red;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 10vw;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+}
