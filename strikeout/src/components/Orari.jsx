@@ -50,7 +50,7 @@ function Orari() {
               <div className="birillo1">
                 <img src={Birillo} alt="..." width={125} />
               </div>
-              <p>UNICO OBIETTIVO <span>ABBATERLI TUTTI</span></p>
+              <p>UNICO OBIETTIVO <span>ABBATTERLI TUTTI</span></p>
               <div className="birillo2">
                 <img src={Birillo} alt="..." width={125} />
               </div>

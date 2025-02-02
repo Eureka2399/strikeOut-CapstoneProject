@@ -1,0 +1,45 @@
+.spazio-contatti{
+    margin: 15px;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contatti {
+    text-align: center;
+}
+.spazio-contatti img{
+    width: 100%;
+}
+
+.leaflet-container{
+    width: 100%;
+    height: 500px;
+}
+
+.cornetta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fisso{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.mail svg{
+    margin-right: 5px;
+}
+
+.spazio-contatti p{
+    margin: 10px 0;
+}

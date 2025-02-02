@@ -1,0 +1,52 @@
+.spazio-prenotazioni{
+    margin: 15px;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+form select, input, textarea, button{
+    margin-top: 15px;
+    font-size: 6vw;
+}
+
+form p{
+    text-align: center;
+    font-size: 8vw;
+    margin: 0;
+}
+
+form .titolo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #f7f3de;
+    border-radius: 15px 15px 0 0;
+    border: 2px solid black;
+}
+
+.spazio-form{
+    border: 2px solid black;
+    border-top: none;
+
+}
+
+form select, button{
+    width: 100%;
+    text-align: center;
+}
+
+form input, textarea{
+    width: 98%;
+    text-align: left;
+}
+
+.prenotazioni-bordo{
+    margin: 15px;
+}

@@ -5,7 +5,7 @@ function Homepage(){
     return(
         <div className='homepage'>
             <div className='cover'></div>
-            <video src={Video}></video>
+            <video src={Video} autoPlay muted loop></video>
             <div className='h1-button'>
             <h1>Bowling Strike <span>OUT</span></h1>
             <button>Orari di apertura</button>
