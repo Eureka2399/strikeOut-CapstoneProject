@@ -47,16 +47,13 @@ function Orari() {
                 </tr>
               </table>
               <div className="birilli">
-              <div className="birillo1">
-                <img src={Birillo} alt="..." width={125} />
-              </div>
-              <p>UNICO OBIETTIVO <span>ABBATTERLI TUTTI</span></p>
-              <div className="birillo2">
-                <img src={Birillo} alt="..." width={125} />
+                <img src={Birillo} alt="..." className="birillo" />
+                <p>
+                  UNICO OBIETTIVO <span>ABBATTERLI TUTTI</span>
+                </p>
+                <img src={Birillo} alt="..." className="birillo"/>
               </div>
             </div>
-            </div>
-
           </div>
         </div>
       </div>

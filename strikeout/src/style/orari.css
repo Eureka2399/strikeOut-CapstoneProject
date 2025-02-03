@@ -1,6 +1,5 @@
 .spaziatura-orari{
     margin: 15px;
-    height: calc(100vh - 30px);
 }
 .titolo-orari{
     background-color: #f7f3da;
@@ -33,30 +32,26 @@
 }
 
 .giorni-ore table th{
-    padding-top: 80px;
-    padding-bottom: 25px;
     text-align: center;
-}
-
-.giorni-ore table td{
-    padding-bottom: 25px;
 }
 
 .orari-apertura{
     border: 2px solid black;
     border-top: none;
     border-radius: 0 0 15px 15px;
-    height: calc(100vh - 150px);
 }
 
 .birilli{
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-    font-size: 4vw;
+    justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .birilli p span{
     color: red;
+}
+
+.birillo{
+    width: 50px;
 }

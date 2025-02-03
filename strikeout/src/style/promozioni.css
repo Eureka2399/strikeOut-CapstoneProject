@@ -1,17 +1,10 @@
 .spaziatura-promo{
     margin: 15px;
     text-align: center;
-    height: calc(100vh - 25px);
 }
 
 .desc-promo{
     border: 2px solid black;
-    height: calc(100vh - 150px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .titolo-promo{
