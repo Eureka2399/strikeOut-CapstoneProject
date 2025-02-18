@@ -1,34 +1,86 @@
-.spaziatura-promo{
+@media screen and (max-width: 922px) {
+  .spaziatura-promo {
     margin: 15px;
     text-align: center;
-}
+  }
 
-.desc-promo{
+  .desc-promo {
     border: 2px solid black;
-}
+  }
 
-.titolo-promo{
+  .titolo-promo {
     background-color: #f7f3da;
-    border-radius: 15px 15px 0 0 ;
+    border-radius: 15px 15px 0 0;
     height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid black;
-}
+  }
 
-.titolo-promo p{
+  .titolo-promo p {
     font-size: 8vw;
-}
+  }
 
-.desc-promo p{
+  .desc-promo p {
     font-size: 4.2vw;
-}
+  }
 
-.lunediFoto, .giovediFoto{
+  .lunediFoto,
+  .giovediFoto {
     margin: 15px;
+  }
+
+  .lunediFoto img,
+  .giovediFoto img {
+    width: 100%;
+  }
 }
 
-.lunediFoto img, .giovediFoto img{
-    width: 100%;
+@media screen and (min-width:923px){
+  .container-promo{
+    display: contents;
+  }
+    .promozioni{
+      width: 50%;
+    }
+    .spaziatura-promo {
+        margin: 15px;
+        text-align: center;
+      }
+    
+      .desc-promo {
+        border: 2px solid black;
+      }
+    
+      .titolo-promo {
+        background-color: #f7f3da;
+        border-radius: 15px 15px 0 0;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+      }
+    
+      .titolo-promo p {
+        font-size: 5vw;
+      }
+    
+      .desc-promo p {
+        font-size: 3vw;
+      }
+    
+      .lunediFoto,
+      .giovediFoto {
+        margin: 15px;
+      }
+    
+      .lunediFoto img,
+      .giovediFoto img {
+        width: 50%;
+      }
+      .promozioni{
+        width: 50%;
+      }
 }

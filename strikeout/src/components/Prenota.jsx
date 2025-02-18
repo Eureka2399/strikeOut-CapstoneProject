@@ -2,8 +2,8 @@ import "../style/prenota.css";
 
 function Prenota() {
   return (
-    <div>
-      <div className="spazio-prenotazioni">
+    <div className="container-prenota">
+      <div className="spazio-prenotazioni prenota">
         <form action="">
           <div className="titolo">
             <p>Prenota il tuo evento!</p>

@@ -26,8 +26,6 @@ function Contatti() {
           <div className="cornetta">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
               fill="black"
               class="bi bi-telephone-fill"
               viewBox="0 0 16 16"
@@ -41,8 +39,6 @@ function Contatti() {
           </div>
           <div className="fisso">
             <svg
-              width="25px"
-              height="25px"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -59,8 +55,6 @@ function Contatti() {
           <div className="mail">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
               fill="currentColor"
               class="bi bi-envelope-fill"
               viewBox="0 0 16 16"

@@ -1,57 +1,154 @@
-.spaziatura-orari{
+@media screen and (max-width: 922px) {
+  .spaziatura-orari {
     margin: 15px;
-}
-.titolo-orari{
+  }
+  .titolo-orari {
     background-color: #f7f3da;
-    border-radius: 15px 15px 0 0 ;
+    border-radius: 15px 15px 0 0;
     height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid black;
-}
+  }
 
-.titolo-orari p{
+  .titolo-orari p {
     color: black;
     font-size: 8vw;
+  }
 
-}
-
-.giorni-ore{
+  .giorni-ore {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
-}
+  }
 
-.giorni-ore table{
+  .giorni-ore table {
     width: 100%;
     text-align: center;
-    font-size: 6vw
-}
+    font-size: 6vw;
+  }
 
-.giorni-ore table th{
+  .giorni-ore table th {
     text-align: center;
-}
+  }
 
-.orari-apertura{
+  .orari-apertura {
     border: 2px solid black;
     border-top: none;
     border-radius: 0 0 15px 15px;
-}
+  }
 
-.birilli{
+  .birilli {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+  }
 
-.birilli p span{
+  .birilli p span {
     color: red;
-}
+  }
 
-.birillo{
+  .birillo {
     width: 50px;
+  }
+}
+@media screen and (min-width: 923px) {
+  .container-orari{
+    display: contents;
+  }
+  .orari {
+    width: 50%;
+    display: block;
+  }
+  .spaziatura-orari {
+    margin: 15px;
+  }
+  .titolo-orari {
+    background-color: #f7f3da;
+    border-radius: 15px 15px 0 0;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+  }
+
+  .titolo-orari p {
+    color: black;
+    font-size: 3vw;
+  }
+
+  .giorni-ore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .giorni-ore table {
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  .giorni-ore table th {
+    text-align: center;
+  }
+
+  .orari-apertura {
+    border: 2px solid black;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .birilli {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .birilli p span {
+    color: red;
+  }
+
+  .birillo {
+    width: 8vw;
+  }
+  .bir1 {
+    animation-name: BirilloAnimationSX;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    transform: rotate(-25deg);
+  }
+
+  .bir2 {
+    animation-name: BirilloAnimationDX;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    transform: rotate(25deg);
+  }
+
+  @keyframes BirilloAnimationSX {
+    from {
+      transform: translateX(-100%) rotate(360deg);
+    }
+    to {
+      transform: translateX(0) rotate(-25deg);
+    }
+  }
+
+  @keyframes BirilloAnimationDX {
+    from {
+      transform: translateX(-500%) rotate(-360deg);
+    }
+    to {
+      transform: translateX(0) rotate(25deg);
+    }
+  }
 }

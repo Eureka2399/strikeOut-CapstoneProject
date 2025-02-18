@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import Logo from "../assets/logo.jpg";
 import "../style/navbar.css";
 
@@ -9,28 +10,64 @@ function Navbar() {
     setIsOpen(!isOpen);
   }
 
+  function closeMenu() {
+    setIsOpen(false);
+  }
+
   return (
     <nav>
       <div className={`off-screen-menu ${isOpen ? "active" : ""}`}>
         <ul>
           <div>
             <li>
-              <a href="/">HOME</a>
+              <Link to="Home" smooth={true} duration={500} onClick={closeMenu}>
+                HOME
+              </Link>
             </li>
             <li>
-              <a href="/">ORARI DI APERTURA</a>
+              <Link to="orari" smooth={true} duration={500} onClick={closeMenu}>
+                ORARI DI APERTURA
+              </Link>
             </li>
             <li>
-              <a href="/">PROMOZIONI</a>
+              <Link
+                to="promozioni"
+                smooth={true}
+                duration={500}
+                onClick={closeMenu}
+              >
+                PROMOZIONI
+              </Link>
             </li>
             <li>
-              <a href="/">ATTIVITA'</a>
+              <Link
+                to="attivita"
+                smooth={true}
+                duration={500}
+                onClick={closeMenu}
+              >
+                ATTIVITA'
+              </Link>
             </li>
             <li>
-              <a href="/">PRENOTA IL TUO EVENTO</a>
+              <Link
+                to="prenota"
+                smooth={true}
+                duration={500}
+                onClick={closeMenu}
+              >
+                PRENOTA IL TUO EVENTO
+              </Link>
             </li>
             <li>
-              <a href="/">CONTATTI</a>
+              <Link
+                to="contatti"
+                smooth={true}
+                duration={500}
+                onClick={closeMenu}
+              >
+                CONTATTI
+              </Link>
             </li>
             <li>
               <a href="/">AREA RISERVATA - TESSERATI</a>

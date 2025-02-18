@@ -30,3 +30,42 @@
 .attivita-desc p{
  font-size: 6vw;
 }
+
+@media screen and (min-width: 923px){
+    .container-attivita{
+        width: 50%;
+    }
+
+    .attivita{
+        margin: 15px;
+    }
+    
+    .attivita-titolo{
+        background-color: #f7f3da;
+        border-radius: 15px 15px 0 0 ;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        font-size: 3vw;
+    }
+    
+    .attivita-desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        padding-top:30px ;
+    }
+    
+    .attivita-desc svg{
+        fill: red;
+        width: 30%;
+    }
+    
+    .attivita-desc p{
+     font-size: 2vw;
+    }
+}

@@ -4,7 +4,7 @@ import "../style/orari.css";
 
 function Orari() {
   return (
-    <div>
+    <div className="container-orari">
       <div className="orari">
         <div className="spaziatura-orari">
           <div className="titolo-orari">
@@ -47,11 +47,11 @@ function Orari() {
                 </tr>
               </table>
               <div className="birilli">
-                <img src={Birillo} alt="..." className="birillo" />
+                <img src={Birillo} alt="..." className="birillo bir1" />
                 <p>
                   UNICO OBIETTIVO <span>ABBATTERLI TUTTI</span>
                 </p>
-                <img src={Birillo} alt="..." className="birillo"/>
+                <img src={Birillo} alt="..." className="birillo bir2"/>
               </div>
             </div>
           </div>

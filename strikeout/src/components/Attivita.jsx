@@ -2,7 +2,7 @@ import "../style/attivita.css";
 
 function Attivita() {
   return (
-    <div>
+    <div className="container-attivita">
       <div className="attivita">
         <div className="attivita-titolo">
           <p>Attività</p>

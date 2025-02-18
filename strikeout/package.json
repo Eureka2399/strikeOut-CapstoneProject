@@ -11,7 +11,8 @@
     "react-dom": "^19.0.0",
     "react-intersection-observer": "^9.15.1",
     "react-leaflet": "^5.0.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.2"
   },
   "scripts": {
     "start": "react-scripts start",

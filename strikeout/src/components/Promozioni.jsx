@@ -5,7 +5,7 @@ import "../style/promozioni.css";
 
 function Promozioni() {
   return (
-    <div>
+    <div className="container-promo">
       <div className="promozioni">
         <div className="spaziatura-promo">
           <div className="titolo-promo">

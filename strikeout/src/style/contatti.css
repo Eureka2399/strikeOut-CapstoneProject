@@ -23,10 +23,18 @@
     align-items: center;
 }
 
+.cornetta svg{
+    width: 25px;
+}
+
 .fisso{
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+}
+
+.fisso svg{
+    width: 25px;
 }
 
 .mail{
@@ -36,9 +44,74 @@
 }
 
 .mail svg{
-    margin-right: 5px;
+    width: 20px;
 }
 
 .spazio-contatti p{
     margin: 10px 0;
+}
+
+@media screen and (min-width: 923px){
+    .spazio-contatti{
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .spazio-contatti a{
+        font-size: 3vw;
+    }
+
+    .contatti {
+        text-align: center;
+    }
+    .spazio-contatti img{
+        width: 100%;
+    }
+    
+    .leaflet-container{
+        width: 100%;
+        height: 500px;
+    }
+    
+    .cornetta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cornetta svg{
+        width: 50px;
+    }
+    
+    .fisso{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .fisso svg{
+        width: 50px;
+    }
+
+    .mail{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .mail svg{
+        width: 150px;
+    }
+    
+    .mail svg{
+        width: 50px;
+    }
+    
+    .spazio-contatti p{
+        margin: 10px 0;
+        font-size: 3vw;
+    }
+    
+
 }
