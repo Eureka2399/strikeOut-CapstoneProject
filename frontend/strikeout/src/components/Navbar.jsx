@@ -70,7 +70,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <a href="/">AREA RISERVATA - TESSERATI</a>
+              <a href="/login">AREA RISERVATA - TESSERATI</a>
             </li>
           </div>
         </ul>
@@ -110,7 +110,7 @@ function Navbar() {
             <a href="/">CONTATTI</a>
           </li>
           <li>
-            <a href="/">AREA RISERVATA - TESSERATI</a>
+            <a href="/login">AREA RISERVATA - TESSERATI</a>
           </li>
         </div>
       </div>

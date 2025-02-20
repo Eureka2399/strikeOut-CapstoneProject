@@ -1,21 +1,20 @@
 // server.js
 const express = require('express');
+const connectDB = require('./db');
 const cors = require('cors');
-const dotenv = require('dotenv');
-const connectDB = require('./db'); // Connessione al database
-const authRoutes = require('./routes/auth'); // Le rotte per l'autenticazione
+const userRoutes = require('./routes/User');
+const authRoutes = require('./routes/auth');
+const app = express();
 
-dotenv.config();
+// Connessione al DB
 connectDB();
 
-const app = express();
 app.use(cors());
-app.use(express.json()); // Assicurati che il server possa leggere i body delle richieste
+app.use(express.json());  // Per leggere i dati in formato JSON
 
-// Aggiungi il prefisso '/api' per le rotte di autenticazione
-app.use('/api/auth', authRoutes); // Questo collega '/api/auth' a 'authRoutes'
+// Aggiungi le rotte
+app.use('/api/auth', authRoutes);  // Autenticazione
+app.use('/api/users', userRoutes);  // Gestione utenti
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+app.listen(PORT, () => console.log(`Server in ascolto sulla porta ${PORT}`));
