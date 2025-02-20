@@ -1,28 +1,11 @@
 const mongoose = require('mongoose');
 
-const UserSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-  },
-  email: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  role: {
-    type: String,
-    enum: ['admin', 'user'],
-    default: 'user',
-  },
-  password: {
-    type: String,
-    required: true,
-  },
-  role:{
-    type: String,
-    required: true,
-  },
+const userSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  email: { type: String, required: true },
+  password: { type: String, required: true },
+  score: { type: Number, default: 0 },  // Punteggio dell'utente
+  role: { type: String, required: true },  // Campo per identificare se l'utente è un admin
 });
 
-module.exports = mongoose.model('User', UserSchema);
+module.exports = mongoose.model('User', userSchema);

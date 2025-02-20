@@ -1,6 +1,5 @@
-// src/components/AddUser.js
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';  // Usa useNavigate al posto di useHistory
+import { useNavigate } from 'react-router-dom'; // Usa useNavigate al posto di useHistory
 
 const AddUser = () => {
   const [name, setName] = useState('');
@@ -8,13 +7,18 @@ const AddUser = () => {
   const [password, setPassword] = useState('');
   const [role, setRole] = useState('user');
   const [error, setError] = useState('');
-  const navigate = useNavigate();  // Inizializza useNavigate
+  const navigate = useNavigate(); // Inizializza useNavigate
 
   // Gestore per l'invio del modulo
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const token = localStorage.getItem('token');  // Supponiamo che il token sia memorizzato in localStorage
+
+    if (!token) {
+      setError('Token non trovato. Effettua prima il login.');
+      return;
+    }
 
     const userData = {
       name,
@@ -24,7 +28,7 @@ const AddUser = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:5000/api/users/create', {
+      const response = await fetch('http://localhost:3001/api/users/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

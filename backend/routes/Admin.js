@@ -40,7 +40,7 @@ router.post('/add-person', authAdmin, async (req, res) => {
       name,
       email,
       password: hashedPassword,
-      role: 'user',
+      role: role || 'user',
     });
 
     await user.save();
